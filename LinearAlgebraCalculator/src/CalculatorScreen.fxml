@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="734.0"
+	prefWidth="592.0000999999975" xmlns:fx="http://javafx.com/fxml/1"
+	xmlns="http://javafx.com/javafx/2.2" fx:controller="application.CalculatorScreen">
+	<children>
+		<TextField fx:id="secondRowSizeField" layoutX="406.0"
+			layoutY="538.0" prefWidth="87.0" promptText="" />
+		<TextField fx:id="firstRowSizeField" layoutX="128.0"
+			layoutY="538.0" prefWidth="87.0" promptText="" />
+		<Label id="LeftRowLabel" layoutX="54.0" layoutY="535.0"
+			prefHeight="26.0" prefWidth="64.0" text="Row:" />
+		<Label id="RightRowLabel" layoutX="330.0" layoutY="535.0"
+			prefHeight="26.0" prefWidth="64.0" text="Row:" />
+		<Label id="LeftColLabel" layoutX="54.0" layoutY="581.0"
+			prefWidth="64.0" text="Col:" />
+		<Label id="RightColLabel" layoutX="330.0" layoutY="581.0"
+			prefWidth="64.0" text="Col:" />
+		<TextField fx:id="firstColSizeField" layoutX="128.0"
+			layoutY="578.0" prefWidth="87.0" promptText="" />
+		<TextField fx:id="secondColSizeField" layoutX="407.0"
+			layoutY="578.0" prefWidth="87.0" promptText="" />
+		<Button fx:id="calculateButton" layoutX="482.0" layoutY="684.0"
+			mnemonicParsing="false" onAction="#calculateButtonAction" prefWidth="98.0001220703125"
+			text="Calculate" />
+		<ChoiceBox fx:id="operationChoiceBox" layoutX="20.0"
+			layoutY="14.0" prefWidth="195.0">
+			<items>
+				<FXCollections fx:factory="observableArrayList">
+					<String fx:value="Add Matrices" />
+					<String fx:value="Subtract Matrices" />
+					<String fx:value="Multiply Matrices" />
+					<String fx:value="Matrix Row Operation" />
+					<String fx:value="Matrice Transpose" />
+					<String fx:value="Inverse Matrix" />
+					<String fx:value="Determinant" />
+					<String fx:value="Vector Dot Product" />
+					<String fx:value="Vector Cross Product" />
+					<String fx:value="Vector Magnitude" />
+					<String fx:value="Vector Unit Vector" />
+					<String fx:value="Rotation by X-Axis" />
+					<String fx:value="Rotation by Y-Axis" />
+					<String fx:value="Rotation by Z-Axis" />
+					<String fx:value="Eigen Calculations" />
+					
+				</FXCollections>
+			</items>
+		</ChoiceBox>
+		<Label fx:id="operationTypeLabel" layoutX="245.0" layoutY="14.0"
+			prefWidth="324.0" text="Operation Type: (Select to Proceed) " />
+		<Button fx:id="dimension1" layoutX="19.0" layoutY="243.0"
+			minHeight="20.0" mnemonicParsing="false" onAction="#dimension1Action"
+			prefHeight="26.0" prefWidth="265.0" text="Dimension 1" />
+		<Button fx:id="dimension2" layoutX="318.0" layoutY="242.0"
+			mnemonicParsing="false" prefWidth="265.0" text="Dimension2" />
+		<ScrollPane fx:id="resultPanel" layoutX="21.0" layoutY="50.0"
+			prefHeight="186.0" prefWidth="561.0">
+			<content>
+				<AnchorPane fx:id="resultPane" minHeight="0.0" minWidth="0.0"
+					prefHeight="165.0" prefWidth="545.0">
+					<children>
+						<GridPane fx:id="resultGrid" layoutX="-1.0" layoutY="-1.0"
+							prefHeight="165.0" prefWidth="545.0" />
+					</children>
+				</AnchorPane>
+			</content>
+		</ScrollPane>
+		<Pane id="firstMatrix" layoutX="21.0" layoutY="270.0" prefHeight="250.0"
+			prefWidth="264.0">
+			<children>
+				<ScrollPane id="scrollMatrixOne" layoutX="0.0" layoutY="0.0"
+					prefHeight="249.9998779296875" prefWidth="264.0">
+					<content>
+						<AnchorPane id="firstMatrixAnchor" minHeight="0.0"
+							minWidth="0.0" prefHeight="249.9998779296875" prefWidth="262.0">
+							<children>
+								<GridPane fx:id="gridFirstMatrix" layoutX="0.0"
+									layoutY="2.0" prefHeight="247.0" prefWidth="248.0" />
+							</children>
+						</AnchorPane>
+					</content>
+				</ScrollPane>
+			</children>
+		</Pane>
+		<Pane id="secondMatrix" layoutX="318.0" layoutY="270.0"
+			prefHeight="250.0" prefWidth="264.0">
+			<children>
+				<ScrollPane id="scrollMatrixTwo" layoutX="0.0" layoutY="0.0"
+					prefHeight="249.9998779296875" prefWidth="264.0">
+					<content>
+						<AnchorPane id="secondMatrixAnchor" minHeight="0.0"
+							minWidth="0.0" prefHeight="249.9998779296875" prefWidth="262.0">
+							<children>
+								<GridPane fx:id="gridSecondMatrix" layoutX="0.0"
+									layoutY="2.0" prefHeight="247.0" prefWidth="248.0" />
+							</children>
+						</AnchorPane>
+					</content>
+				</ScrollPane>
+			</children>
+		</Pane>
+		<Button fx:id="setButton" layoutX="482.0" layoutY="644.0"
+			mnemonicParsing="false" onAction="#setAction" prefWidth="99.0" text="Set" />
+		<Button fx:id="showWorkButton" layoutX="554.0" layoutY="15.0"
+			minHeight="20.0" minWidth="28.0" mnemonicParsing="false" prefHeight="20.0"
+			prefWidth="28.0" text="+" />
+	</children>
+</AnchorPane>

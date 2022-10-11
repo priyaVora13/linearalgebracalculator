@@ -1,0 +1,119 @@
+#lambdaLabel { 
+	-fx-text-fill: white;
+	-fx-font-size: 25.0px;
+	
+}
+#showWorkLabel { 
+		-fx-text-fill: white;
+	-fx-font-size: 18.0px;
+}
+#scrollMatrixOne { 
+	-fx-background-color: black;
+}
+
+#scrollMatrixTwo { 
+	-fx-background-color: black;
+}
+
+#AnchorPane { 
+-fx-background-color: linear-gradient(to right top, #45002d, #671526, #7b381a, #805e15, #74832c);
+}
+
+
+#firstMatrixAnchor { 
+	-fx-background-color: black;
+}
+
+#secondMatrixAnchor { 
+	-fx-background-color: black;
+}
+
+
+#firstMatrix { 
+	-fx-background-color: black;
+}
+
+#secondMatrix { 
+	-fx-background-color: black;
+}
+
+#gridFirstMatrix { 
+	-fx-background-color: black;
+}
+
+
+#gridOne { 
+	-fx-background-color: black;
+		-fx-border-color: yellow;
+}
+#vbox { 
+	-fx-background-color: red;
+}
+#gridPaneTwo { 
+	-fx-background-color: black;
+		-fx-border-color: yellow;
+}
+.gridSecondMatrix { 
+	-fx-background-color: black;
+}
+.gridResultTextField { 
+	-fx-background-color: black;
+	-fx-text-fill: white;
+	-fx-border-color: yellow;
+}
+
+
+.gridTextField{ 
+	-fx-background-color: black;
+	-fx-text-fill: white;
+	-fx-border-color: yellow;
+}
+
+.gridTextField2{ 
+	-fx-background-color: black;
+	-fx-text-fill: white;
+	-fx-border-color: yellow;
+
+}
+
+#dimension1 { 
+	   -fx-text-fill: black;
+}
+
+#dimension2 { 
+	   -fx-text-fill: black;
+}
+
+#resultPane { 
+		-fx-background-color: black;
+	   -fx-text-fill: white;
+}
+
+#operationTypeLabel { 
+	-fx-text-fill: white;
+	-fx-font-size: 18.0px;
+}
+
+#LeftRowLabel { 
+    -fx-text-fill: white;
+    -fx-font-size: 18.0px;
+}
+
+#RightRowLabel { 
+    -fx-text-fill: white;
+    -fx-font-size: 18.0px;
+}
+
+#LeftColLabel { 
+ -fx-text-fill: white;
+    -fx-font-size: 18.0px;
+}
+
+#RightColLabel { 
+-fx-text-fill: white;
+    -fx-font-size: 18.0px;
+}
+
+#observableArrayList { 
+  -fx-text-fill: black;
+}

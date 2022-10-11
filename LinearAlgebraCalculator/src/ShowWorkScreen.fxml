@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="734.0" prefWidth="592.0000999999975" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.ShowScreenController">
+  <children>
+    <Pane layoutX="0.0" layoutY="0.0" prefHeight="720.0" prefWidth="593.0">
+      <children>
+        <ScrollPane fx:id="scrollWorkPane" layoutX="-15.0" layoutY="0.0" prefHeight="734.0" prefWidth="607.0001220703125">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="733.0" prefWidth="606.0">
+              <children>
+                <GridPane fx:id="gridOne" layoutX="21.0" layoutY="23.0" prefHeight="354.0" prefWidth="565.0" />
+                <GridPane fx:id="gridPaneTwo" layoutX="21.0" layoutY="377.0" prefHeight="328.0" prefWidth="565.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </ScrollPane>
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>
